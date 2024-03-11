@@ -18,15 +18,15 @@ namespace PokerClickerV3
             {
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                BackgroundColor = Color.Gray,
+                BackgroundColor = Color.FromRgb(255, 250, 250),
                 Padding = new Thickness(10)
             };
 
             var homeButton = new Button
             {
                 Text = "Home",
-                BackgroundColor = Color.Transparent,
-                TextColor = Color.White
+                BackgroundColor = Color.FromRgba(0, 0, 0, 0.0),
+                TextColor = Color.FromRgb(255, 255, 255)
             };
             homeButton.Clicked += async (sender, e) =>
             {
@@ -36,8 +36,8 @@ namespace PokerClickerV3
             var aboutButton = new Button
             {
                 Text = "About",
-                BackgroundColor = Color.Transparent,
-                TextColor = Color.White
+                BackgroundColor = Color.FromRgb(240, 255, 240),
+                TextColor = Color.FromRgb(255, 222, 173)
             };
             aboutButton.Clicked += async (sender, e) =>
             {
